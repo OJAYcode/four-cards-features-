@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+  background-color: var(--VeryLightGray);
+  font-family: "Poppins", sans-serif;
+}
+.holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 75px;
+  margin-top: 40px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  /* width: 100%;
+    height: 100vh; */
+  margin: 0 auto;
+}
+.header {
+  font-size: 40px;
+  color: var(--GrayishBlue);
+}
+.topheader {
+  font-size: 45px;
+  font-weight: 900;
+}
+.comment {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  color: var(--GrayishBlue);
+}
+.emptycard1 {
+  grid-area: fourth;
+}
+.secondcard {
+  grid-area: second;
+}
+.emptycard2 {
+  grid-area: sixth;
+}
+.firstcard {
+  grid-area: first;
+}
+.fourthcard {
+  grid-area: fifth;
+}
+/* .emptycard3{
+ grid-area: sixth;
+} */
+.thirdcard {
+  grid-area: third;
+}
+/* .emptycard4{
+    grid-area: eighth;
+} */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "first second third" "fourth fifth sixth";
+  margin-top: 25px;
+  grid-gap: 2px;
+}
+.subheader {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.text {
+  opacity: 60%;
+  padding-bottom: 45px;
+}
+.secondcard {
+  border: 5px solid white;
+  border-top-color: var(--Red);
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 5px 5px 10px var(--GrayishBlue);
+}
+.secondcard img {
+  float: right;
+}
+.firstcard {
+  border: 5px solid white;
+  border-top-color: var(--Cyan);
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  height: fit-content;
+  transform: translateY(10rem);
+  margin-left: 25px;
+  box-shadow: 5px 5px 10px var(--GrayishBlue);
+}
+.firstcard img {
+  float: right;
+}
+.thirdcard {
+  border: 5px solid white;
+  border-top-color: var(--Blue);
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 8px;
+  transform: translateY(10rem);
+  box-shadow: 5px 5px 10px var(--GrayishBlue);
+  margin-right: 0px;
+}
+.thirdcard img {
+  float: right;
+}
+.fourthcard {
+  border: 5px solid white;
+  border-top-color: var(--Orange);
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px var(--GrayishBlue);
+}
+.fourthcard img {
+  float: right;
+}
+
+@media (max-width:900px) {
+    .firstcard{
+        grid-area: first;
+    }
+    .secondcard{
+        grid-area: second;
+    }
+    .thirdcard{
+        grid-area: third;
+    }
+    .fourthcard{
+        grid-area: fourth;
+        margin-top: 8px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "first second" "third fourth";
+        margin-top: 25px;
+        grid-gap: 1rem;
+      }
+      .thirdcard {
+        border: 5px solid white;
+        border-top-color: var(--Blue);
+        border-radius: 10px;
+        background-color: white;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+        height: fit-content;
+        /* margin-top: 8px; */
+        transform: translateY(0rem);
+        box-shadow: 5px 5px 10px var(--GrayishBlue);
+        margin-right: 0px;
+      }
+      .firstcard {
+        border: 5px solid white;
+        border-top-color: var(--Cyan);
+        border-radius: 10px;
+        background-color: white;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+        height: fit-content;
+        transform: translateY(0rem);
+        margin-bottom: 0px;
+        margin-left: 0px;
+        box-shadow: 5px 5px 10px var(--GrayishBlue);
+      }
+}
+
+@media (max-width: 600px) {
+  section {
+    display: block;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstcard {
+    border: 5px solid white;
+    border-top-color: var(--Cyan);
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 95%;
+    height: fit-content;
+    transform: translateY(0rem);
+    margin-bottom: 8px;
+    margin-left: 0px;
+    box-shadow: 5px 5px 10px var(--GrayishBlue);
+  }
+  .firstcard img {
+    float: right;
+  }
+  .thirdcard {
+    border: 5px solid white;
+    border-top-color: var(--Blue);
+    border-radius: 10px;
+    background-color: white;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 95%;
+    height: fit-content;
+    margin-top: 8px;
+    transform: translateY(0rem);
+    box-shadow: 5px 5px 10px var(--GrayishBlue);
+    margin-right: 0px;
+  }
+  .thirdcard img {
+    float: right;
+  }
+  .fourthcard {
+    margin-top: 8px;
+  }
+  .holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 75px;
+    margin-top: 40px;
+  }
+  .header{
+    text-align: center;
+  }
+  .topheader{
+    text-align:center ;
+  }
+}
