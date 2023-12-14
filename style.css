@@ -46,7 +46,7 @@ section {
 }
 .comment {
   font-size: 15px;
-  width: 100%;
+  width: 50%;
   text-align: center;
   color: var(--GrayishBlue);
 }
@@ -102,7 +102,7 @@ section {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  width: 100%;
+  width: 95%;
   height: fit-content;
   box-shadow: 5px 5px 10px var(--GrayishBlue);
 }
@@ -119,10 +119,11 @@ section {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  width: 100%;
+  width: 90%;
   height: fit-content;
   transform: translateY(10rem);
   margin-left: 25px;
+  
   box-shadow: 5px 5px 10px var(--GrayishBlue);
 }
 .firstcard img {
@@ -138,7 +139,7 @@ section {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  width: 100%;
+  width: 90%;
   height: fit-content;
   margin-top: 8px;
   transform: translateY(10rem);
@@ -158,7 +159,7 @@ section {
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  width: 100%;
+  width: 95%;
   height: fit-content;
   margin-top: 20px;
   box-shadow: 5px 5px 10px var(--GrayishBlue);
