@@ -205,6 +205,7 @@ section {
         transform: translateY(0rem);
         box-shadow: 5px 5px 10px var(--GrayishBlue);
         margin-right: 0px;
+        
       }
       .firstcard {
         border: 5px solid white;
@@ -249,6 +250,7 @@ section {
     margin-bottom: 8px;
     margin-left: 0px;
     box-shadow: 5px 5px 10px var(--GrayishBlue);
+    margin-left: 10px;
   }
   .firstcard img {
     float: right;
@@ -269,12 +271,14 @@ section {
     transform: translateY(0rem);
     box-shadow: 5px 5px 10px var(--GrayishBlue);
     margin-right: 0px;
+    margin-left: 10px;
   }
   .thirdcard img {
     float: right;
   }
   .fourthcard {
     margin-top: 8px;
+    margin-left: 10px;
   }
   .holder {
     width: 100%;
@@ -284,6 +288,9 @@ section {
     flex-direction: column;
     margin-bottom: 75px;
     margin-top: 40px;
+  }
+  .secondcard{
+    margin-left: 10px;
   }
   .header{
     text-align: center;
