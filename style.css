@@ -205,6 +205,7 @@ section {
         transform: translateY(0rem);
         box-shadow: 5px 5px 10px var(--GrayishBlue);
         margin-right: 0px;
+        margin-left: 10px;
         
       }
       .firstcard {
@@ -223,6 +224,13 @@ section {
         margin-bottom: 0px;
         margin-left: 0px;
         box-shadow: 5px 5px 10px var(--GrayishBlue);
+        margin-left: 10px;
+      }
+      .secondcard{
+        margin-left: 10px;
+      }
+      .fourthcard{
+        margin-left: 10px;
       }
 }
 
